@@ -41,14 +41,14 @@
     --text-heading: #f9f9f9;
 
     /* TIPOGRAPHY */
-    --logo: 500 2.5rem/auto "Leckerli One", cursive;
+    --logo: 500 2.5rem/normal "Leckerli One", cursive;
 
-    --heading-md: 800 1.75rem/auto "Baloo 2", sans-serif;
-    --heading-sm: 800 1.125rem/auto "Baloo 2", sans-serif;
+    --heading-md: 800 1.75rem/normal "Baloo 2", sans-serif;
+    --heading-sm: 800 1.125rem/normal "Baloo 2", sans-serif;
 
-    --body-md: 600 1rem/auto "Open Sans", sans-serif;
-    --body-sm: 600 .875rem/auto "Open Sans", sans-serif;
-    --body-xs: 600 .75rem/auto "Open Sans", sans-serif;
+    --body-md: 600 1rem/normal "Open Sans", sans-serif;
+    --body-sm: 600 .875rem/normal "Open Sans", sans-serif;
+    --body-xs: 600 .75rem/normal "Open Sans", sans-serif;
 }
 
 body {

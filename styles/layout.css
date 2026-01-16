@@ -1,0 +1,45 @@
+#content {
+    height: 100vh;
+    margin: 1.25rem;
+    grid-template-columns: 31.25rem 1fr;
+}
+
+aside {
+    height: 100vh;
+    background: var(--shape-body) url(../assets/Background.png) no-repeat center bottom/100% 100vh;
+    border-radius: .75rem;
+    padding: 2rem;
+
+    header {
+
+        img {
+            width: 2.865rem;
+            height: 3rem;
+            margin-top: 1rem;
+        }
+
+        h1 {
+            font: var(--logo);
+            color: var(--pink);
+            margin-bottom: .25rem;
+        }
+
+        p {
+            font: 300 1rem/normal "Open Sans";
+        }
+    }
+}
+
+main {
+    overflow-y: auto;
+    background-color: var(--shape-body);
+    padding-block: 5rem;
+    display: grid;
+    justify-items: center;
+    border-radius: .75rem;
+
+    #text {
+        width: 560px;
+        background-color: red;
+    }
+}

@@ -1,0 +1,11 @@
+.grid {
+    display: grid;
+}
+
+.grid-flow-col {
+    grid-auto-flow: column;
+}
+
+.gap-20 {
+    gap: 20px;
+}
