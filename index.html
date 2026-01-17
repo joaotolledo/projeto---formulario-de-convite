@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,9 +11,11 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
     <div id="content" class="grid grid-flow-col gap-20">
         <aside>
@@ -25,19 +28,64 @@
         </aside>
 
         <main>
-            <div id="text">
-                <h2>Crie seu convite</h2>
-            </div>
+            <div class="main-container">
+                <div class="title">
+                    <h2>Crie seu convite</h2>
+                </div>
 
-            <form method="post" enctype="multipart/form-data">
-                <fieldset>
-                    <legend>
-                        <img src="assets/icons/calendar.svg" alt="ícone de calendário">
-                        Sobre o evento
-                    </legend>
-                </fieldset>
-            </form>
+                <form method="post" enctype="multipart/form-data">
+                    <fieldset class="about-event">
+                        <legend>
+                            <img src="assets/icons/calendar.svg" alt="ícone de calendário">
+                            Sobre o evento
+                        </legend>
+
+                        <div class="input-wrapper">
+                            <label for="event-name">Título</label>
+                            <input type="text" id="event-name" placeholder="Nome do evento">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <div class="date1">
+                                <label for="date-start">Início</label>
+                                <input type="datetime-local" id="date-start">
+                            </div>
+
+                            <div class="date2">
+                                <label for="date-end">Fim</label>
+                                <input type="datetime-local" id="date-end">
+                            </div>
+                        </div>
+
+                        <div class="local">
+                            <div class="btn-segment">
+                                <label>Tipo</label>
+                                <button class="btn-presencial">
+                                    <img src="" alt="">
+                                    <span>Presencial</span>
+                                </button>
+
+                                <button class="btn-online">
+                                    <img src="" alt="">
+                                    <span>Online</span>
+                                </button>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="local">Local</label>
+                                <input type="text" id="local" placeholder="Link ou endereço">
+                            </div>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="event-details">Descrição</label>
+                            <textarea name="desc-txt" id="event-details"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </main>
     </div>
 </body>
+
 </html>

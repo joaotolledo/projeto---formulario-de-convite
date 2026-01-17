@@ -1,0 +1,25 @@
+form {
+    margin-top: 2.5rem;
+}
+
+fieldset {
+    display: grid;
+    border: none;
+    gap: 1rem;
+}
+
+legend {
+    font: var(--heading-sm);
+    color: var(--text-heading);
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: 1.5rem;
+
+    & img {
+        width: 1.5rem;
+        height: 1.5rem;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+    }
+}

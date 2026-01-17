@@ -31,15 +31,18 @@ aside {
 }
 
 main {
-    overflow-y: auto;
+    overflow: auto;
     background-color: var(--shape-body);
     padding-block: 5rem;
-    display: grid;
-    justify-items: center;
     border-radius: .75rem;
 
-    #text {
-        width: 560px;
-        background-color: red;
+    & .main-container {
+        max-width: 37.5rem;
+        margin-inline: auto;
+    }
+
+    & .title {
+        width: 37.5rem;
+        margin-inline: auto;
     }
 }
