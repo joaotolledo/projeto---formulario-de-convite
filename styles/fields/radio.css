@@ -19,6 +19,7 @@ label+.radio-wrapper {
         position: relative;
         gap: .5rem;
         transition: background-color 0.2s;
+        cursor: pointer;
 
         & input,
         & input:focus,
