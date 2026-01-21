@@ -1,0 +1,59 @@
+label+.radio-wrapper {
+    margin-top: .75rem;
+}
+
+.radio-wrapper {
+    display: flex;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    padding: .25rem;
+    border-radius: .5rem;
+    gap: .25rem;
+
+    & .radio-inner {
+        border-radius: .25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        gap: .5rem;
+        transition: background-color 0.2s;
+
+        & input,
+        & input:focus,
+        & input:hover {
+            all: unset;
+            position: absolute;
+            inset: 0;
+        }
+
+        & .img-presencial {
+            background: url(../../assets/icons/building-2.svg) no-repeat center/1rem 1rem;
+            width: 1.4rem;
+            height: 2.5rem;
+        }
+
+        & .img-online {
+            background: url(../../assets/icons/video.svg) no-repeat center/1rem 1rem;
+            width: 1.4rem;
+            height: 2.5rem;
+        }
+
+        &:has(:checked) {
+            background-color: var(--input-stroke);
+
+            & .img-presencial {
+                background: url(../../assets/icons/building-2-checked.svg) no-repeat center/1rem 1rem;
+                width: 1.4rem;
+                height: 2.5rem;
+            }
+
+            & .img-online {
+                background: url(../../assets/icons/video-checked.svg) no-repeat center/1rem 1rem;
+                width: 1.4rem;
+                height: 2.5rem;
+            }
+        }
+    }
+}

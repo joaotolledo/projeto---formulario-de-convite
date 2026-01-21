@@ -42,44 +42,50 @@
 
                         <div class="input-wrapper">
                             <label for="event-name">Título</label>
-                            <input type="text" id="event-name" placeholder="Nome do evento">
+                            <input type="text" id="event-name" placeholder="Nome do evento" required>
                         </div>
 
-                        <div class="input-wrapper">
+                        <div class="date-wrapper">
                             <div class="date1">
                                 <label for="date-start">Início</label>
-                                <input type="datetime-local" id="date-start">
+                                <input type="datetime-local" id="date-start" required>
                             </div>
 
                             <div class="date2">
                                 <label for="date-end">Fim</label>
-                                <input type="datetime-local" id="date-end">
+                                <input type="datetime-local" id="date-end" required>
                             </div>
                         </div>
 
                         <div class="local">
-                            <div class="btn-segment">
+                            <div class="radio-content">
                                 <label>Tipo</label>
-                                <button class="btn-presencial">
-                                    <img src="" alt="">
-                                    <span>Presencial</span>
-                                </button>
+                                <div class="radio-wrapper">
 
-                                <button class="btn-online">
-                                    <img src="" alt="">
-                                    <span>Online</span>
-                                </button>
+                                    <div class="radio-inner">
+                                        <input type="radio" id="radio-presencial" name="online">
+                                        <div class="img-presencial"></div>
+                                        <label for="radio-presencial">Presencial</label>
+                                    </div>
+
+                                    <div class="radio-inner">
+                                        <input type="radio" id="radio-online" name="online">
+                                        <div class="img-online"></div>
+                                        <label for="radio-online">Online</label>
+                                    </div>
+
+                                </div>
                             </div>
 
-                            <div class="input-wrapper">
+                            <div class="input-wrapper local-link">
                                 <label for="local">Local</label>
-                                <input type="text" id="local" placeholder="Link ou endereço">
+                                <input type="text" id="local" placeholder="Link ou endereço" required>
                             </div>
                         </div>
 
                         <div class="textarea-wrapper">
                             <label for="event-details">Descrição</label>
-                            <textarea name="desc-txt" id="event-details"></textarea>
+                            <textarea name="desc-txt" id="event-details" rows="5" required></textarea>
                         </div>
                     </fieldset>
                 </form>

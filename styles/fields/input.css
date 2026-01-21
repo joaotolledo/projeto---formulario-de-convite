@@ -1,0 +1,46 @@
+input, textarea {
+    all: unset;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+    padding: .812rem 1rem;
+    margin-top: .75rem;
+
+    &:focus {
+        outline: 2px solid var(--brand-light);
+    }
+}
+
+.input-wrapper {
+    margin-bottom: 1rem;
+}
+
+input {
+    &:user-invalid {
+        outline: 1px solid var(--danger);
+    }
+}
+
+.date-wrapper {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+
+    & > div {
+        flex: 1;
+        width: 100%;
+    }
+}
+
+.local {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+
+    & > div {
+        flex: 1;
+        width: 100%;
+    }
+}
