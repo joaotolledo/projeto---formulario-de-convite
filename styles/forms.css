@@ -23,3 +23,7 @@ legend {
         aspect-ratio: 1/1;
     }
 }
+
+fieldset + fieldset {
+    margin-top: 3rem;
+}

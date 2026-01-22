@@ -58,3 +58,49 @@ label+.radio-wrapper {
         }
     }
 }
+
+label + color-content {
+    margin-top: 1.5rem;
+}
+
+label + .color-wrapper {
+    margin-top: 1rem;
+}
+
+.color-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+    justify-items: center;
+
+    & .color-inner {
+        background-color: var(--input-stroke);
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: .375rem;
+        cursor: pointer;
+
+        & .color-input,
+        & .color-input:focus,
+        & .color-input:hover {
+            all: unset;
+            position: absolute;
+            inset: 0;
+            transform: translateY(-11%);
+        }
+
+        & .color-style {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        &:has(:checked) {
+            outline: 2px solid var(--brand-light);
+        }
+    }
+}
