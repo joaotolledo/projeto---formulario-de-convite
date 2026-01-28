@@ -39,7 +39,7 @@ main {
     border-radius: .75rem;
 
     & .main-container {
-        max-width: 35rem;
+        max-width: 37rem;
         margin-inline: auto;
     }
 
@@ -47,4 +47,9 @@ main {
         width: 37.5rem;
         margin-inline: auto;
     }
+}
+
+.event-style {
+    display: flex;
+    margin-top: 1.75rem;
 }

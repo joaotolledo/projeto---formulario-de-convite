@@ -1,0 +1,73 @@
+.switch-wrapper-text {
+    margin-bottom: .75rem;
+}
+
+.switch-inner {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+    & .switch-input {
+        display: none;
+
+        &:not(:checked) + .switch-label {
+            background-color: var(--input-base);
+            border: 1px solid var(--input-stroke);
+        }
+
+        &:not(:checked) + .switch-label::after {
+            background-color: var(--input-stroke);
+        }
+
+        &:checked + .switch-label {
+            background-color: var(--brand-light);
+            border: 1px solid var(--brand-light);
+        }
+
+        &:checked + .switch-label::after {
+            transform: translateX(1.25rem);
+            background-color: #ffffff;
+        }
+    }
+
+    & .switch-input:checked ~ .label-text::after {
+        content: "Claro";
+    }
+
+    & .switch-label {
+        position: relative;
+        display: inline-block;
+        width: 3.186rem;
+        height: 1.937rem;
+        border-radius: 1.937rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        flex-shrink: 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            left: 2px;
+            width: 1.687rem;
+            height: 1.687rem;
+            background-color: #ffffff;
+            border-radius: 50%;
+            transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    & .label-text {
+        cursor: pointer;
+        font: var(--body-md);
+        color: var(--text-heading);
+
+        font-size: 0;
+
+        &::after {
+            font-size: 1rem;
+            content: "Escuro";
+        }
+    }
+}
