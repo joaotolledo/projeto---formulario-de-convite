@@ -244,8 +244,18 @@
                             </div>
 
                             <div class="file-wrapper flex-2">
-                                <label for="cover-photo">Foto de capa</label>
-                                <input type="file" id="cover-photo">
+                                <label>Foto de capa</label>
+                                
+                                <div class="file-inner">
+                                    <input type="file" id="file">
+
+                                    <div class="btn-file">
+                                        <img src="assets/icons/upload.svg" alt="ícone de upload">
+                                        <label for="file">Selecionar</label>
+                                    </div>
+
+                                    <span id="file-name">Nenhum arquivo selecionado</span>
+                                </div>
                             </div>
                         </div>
                     </fieldset>
@@ -253,6 +263,8 @@
             </div>
         </main>
     </div>
+
+    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>
