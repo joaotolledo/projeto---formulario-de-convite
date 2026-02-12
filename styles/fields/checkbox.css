@@ -10,27 +10,27 @@
     & .switch-input {
         display: none;
 
-        &:not(:checked) + .switch-label {
+        &:not(:checked)+.switch-label {
             background-color: var(--input-base);
             border: 1px solid var(--input-stroke);
         }
 
-        &:not(:checked) + .switch-label::after {
+        &:not(:checked)+.switch-label::after {
             background-color: var(--input-stroke);
         }
 
-        &:checked + .switch-label {
+        &:checked+.switch-label {
             background-color: var(--brand-light);
             border: 1px solid var(--brand-light);
         }
 
-        &:checked + .switch-label::after {
+        &:checked+.switch-label::after {
             transform: translateX(1.25rem);
             background-color: #ffffff;
         }
     }
 
-    & .switch-input:checked ~ .label-text::after {
+    & .switch-input:checked~.label-text::after {
         content: "Claro";
     }
 
@@ -76,13 +76,53 @@
     margin-top: 3rem;
     padding-top: 3rem;
     border-top: 1px solid var(--input-stroke);
-
-    & .terms + .terms {
-        margin-bottom: .25rem;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
 
     & .terms {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
 
-        
+        & .terms-container {
+            width: 1.25rem;
+            height: 1.25rem;
+            position: relative;
+            background-color: var(--input-base);
+            border: 1px solid var(--input-stroke);
+            border-radius: .25rem;
+            cursor: pointer;
+
+            & input,
+            & input:focus,
+            & input:hover {
+                all: unset;
+                position: absolute;
+                inset: 0;
+            }
+
+            & img {
+                display: none;
+            }
+
+            &:has(:checked) {
+                border: 1px solid var(--brand-light);
+
+                & img {
+                    display: block;
+                }
+            }
+        }
+
+        & label {
+            width: 100%;
+            font: var(--body-md);
+            font-size: .937rem;
+
+            & strong {
+                color: var(--brand-light);
+            }
+        }
     }
 }
