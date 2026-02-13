@@ -43,17 +43,32 @@
                         <div class="input-wrapper">
                             <label for="event-name">Título</label>
                             <input type="text" id="event-name" placeholder="Nome do evento" required>
+
+                            <div class="error">
+                                <img src="assets/icons/circle-alert (cópia).svg" alt="">
+                                <span>Campo obrigatório</span>
+                            </div>
                         </div>
 
                         <div class="date-wrapper">
                             <div class="date1">
                                 <label for="date-start">Início</label>
                                 <input type="datetime-local" id="date-start" required>
+
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert (cópia).svg" alt="">
+                                    <span>Campo obrigatório</span>
+                                </div>
                             </div>
 
                             <div class="date2">
                                 <label for="date-end">Fim</label>
                                 <input type="datetime-local" id="date-end" required>
+
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert (cópia).svg" alt="">
+                                    <span>Campo obrigatório</span>
+                                </div>
                             </div>
                         </div>
 
@@ -80,6 +95,11 @@
                             <div class="input-wrapper local-link">
                                 <label for="local">Local</label>
                                 <input type="text" id="local" placeholder="Link ou endereço" required>
+
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert (cópia).svg" alt="">
+                                    <span>Campo obrigatório</span>
+                                </div>
                             </div>
                         </div>
 
@@ -177,13 +197,15 @@
                                 </div>
 
                                 <div class="event-theme-inner">
-                                    <input class="radio-theme" type="radio" id="baby-shower" name="event-theme" required>
+                                    <input class="radio-theme" type="radio" id="baby-shower" name="event-theme"
+                                        required>
                                     <img src="assets/themes/baby-shower.png" alt="imagem de uma fralda com uma flor">
                                     <label for="baby-shower">Chá de bebê</label>
                                 </div>
 
                                 <div class="event-theme-inner">
-                                    <input class="radio-theme" type="radio" id="bridal-shower" name="event-theme" required>
+                                    <input class="radio-theme" type="radio" id="bridal-shower" name="event-theme"
+                                        required>
                                     <img src="assets/themes/bridal-shower.png" alt="imagem de uma cozinha com panelas">
                                     <label for="bridal-shower">Chá de panela</label>
                                 </div>
@@ -245,9 +267,9 @@
 
                             <div class="file-wrapper flex-2">
                                 <label>Foto de capa</label>
-                                
+
                                 <div class="file-inner">
-                                    <input type="file" id="file">
+                                    <input type="file" id="file" required>
 
                                     <div class="btn-file">
                                         <img src="assets/icons/upload.svg" alt="ícone de upload">
@@ -268,19 +290,34 @@
 
                         <div class="input-wrapper">
                             <label for="name">Nome</label>
-                            <input type="text" id="name" placeholder="Nome completo">
+                            <input type="text" id="name" placeholder="Nome completo" required>
+
+                            <div class="error">
+                                <img src="assets/icons/circle-alert (cópia).svg" alt="">
+                                <span>Campo obrigatório</span>
+                            </div>
                         </div>
 
                         <div class="contact-wrapper">
 
                             <div class="email">
                                 <label for="mail">E-mail</label>
-                                <input type="email" id="mail" placeholder="exemplo@gmail.com">
+                                <input type="email" id="mail" placeholder="exemplo@gmail.com" required>
+
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert (cópia).svg" alt="">
+                                    <span>Campo obrigatório</span>
+                                </div>
                             </div>
 
                             <div class="fone">
                                 <label for="telephone">Telefone</label>
-                                <input type="tel" id="telephone" placeholder="(99) 99999-9999">
+                                <input type="tel" id="telephone" placeholder="(99) 99999-9999" required>
+
+                                <div class="error">
+                                    <img src="assets/icons/circle-alert (cópia).svg" alt="">
+                                    <span>Campo obrigatório</span>
+                                </div>
                             </div>
                         </div>
                     </fieldset>
@@ -291,7 +328,8 @@
                                 <input type="checkbox" id="terms">
                                 <img src="assets/icons/check-hover.svg" alt="">
                             </div>
-                            <label for="terms">Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></label>
+                            <label for="terms">Li e concordo com os <strong>Termos e Condições</strong> e com a
+                                <strong>Política de Privacidade</strong></label>
                         </div>
 
                         <div class="terms">

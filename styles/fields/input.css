@@ -21,6 +21,10 @@ input {
     &:user-invalid {
         outline: 1px solid var(--danger);
     }
+
+    &:user-invalid + .error {
+        display: flex;
+    }
 }
 
 .date-wrapper {
